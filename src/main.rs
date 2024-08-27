@@ -8,6 +8,7 @@ use macro_colors::*;
 #[command(name = "quibbler")]
 #[command(version)]
 #[command(author = "Todd Martin")]
+#[command(subcommand_required = true)]
 struct Cli {
 		#[command(subcommand)]
 		command: Option<Commands>,
