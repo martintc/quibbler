@@ -24,6 +24,7 @@ enum Commands {
 		Fetch { },
 		/// List all feeds
 		List { },
+		/// Remove a feed by name
 		Remove { name: String },
 }
 
