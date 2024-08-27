@@ -15,11 +15,14 @@ struct Cli {
 
 #[derive(Debug, Subcommand)]
 enum Commands {
+		/// Add a RSS feed
 		Add {
 				name: String,
 				url: String,
 		},
+		/// Fetch all feeds
 		Fetch { },
+		/// List all feeds
 		List { },
 		Remove { name: String },
 }
