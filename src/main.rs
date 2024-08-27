@@ -83,7 +83,7 @@ async fn main() -> Result<(), anyhow::Error> {
 				Some(Commands::Remove { name }) => {
 						cfg.feeds.remove(name);
 				},
-				None => println!("No command!"),
+				None => { },
 		};
 
 		confy::store("quibbler", "quibbler", cfg)?;
