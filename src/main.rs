@@ -6,7 +6,7 @@ use macro_colors::*;
 
 #[derive(Debug, Parser)]
 #[command(name = "quibbler")]
-#[command(version = "1.0")]
+#[command(version)]
 #[command(author = "Todd Martin")]
 struct Cli {
 		#[command(subcommand)]
